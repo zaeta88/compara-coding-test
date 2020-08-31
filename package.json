@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha '**/*.spec.ts'"
+    "test": "nyc mocha '**/*.spec.ts'",
+    "after-30-days": "npx ts-node after30Days.ts"
   },
   "nyc": {
     "extension": [
@@ -18,6 +19,9 @@
       "html"
     ],
     "all": true,
+    "include": [
+      "src/*.ts"
+    ],
     "sourceMap": true,
     "instrument": true
   },
