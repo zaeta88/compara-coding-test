@@ -1,6 +1,6 @@
 import { Product } from './product';
 
-export class fullCoverageProduct extends Product {
+export class FullCoverageProduct extends Product {
   public name: String = 'Full Coverage';
   public operation:String = '+=';
 }
