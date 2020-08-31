@@ -1,9 +1,9 @@
 export class Product {
-  public name: String;
-  public sellIn: any;
-  public price: any;
+  public name: string;
+  public sellIn: number;
+  public price: number;
   public num: number;
-  public operation: String = '-=';
+  public operation = '-=';
 
   SELL_IN_DECREASE = 1;
   PRICE_DECREASE = 1;

@@ -5,7 +5,7 @@ import { SpecialFullCoverageProduct } from './src/specialFullCoverageProduct';
 import { SuperSaleProduct } from './src/superSaleProduct';
 import { CarInsurance } from './src/carInsurance';
 
-let products = [
+const products = [
   new Product('Medium Coverage', 10, 20),
   new FullCoverageProduct('Full Coverage', 2, 0),
   new Product('Low Coverage', 5, 7),

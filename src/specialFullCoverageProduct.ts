@@ -1,8 +1,8 @@
 import { Product } from './product';
 
 export class SpecialFullCoverageProduct extends Product {
-  public name: String = 'Special Full Coverage';
-  public operation:String = '+=';
+  public name = 'Special Full Coverage';
+  public operation = '+=';
 
   updatePrice() {
     this.sellIn -= this.SELL_IN_DECREASE;

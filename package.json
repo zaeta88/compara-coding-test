@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc mocha '**/*.spec.ts'",
-    "after-30-days": "npx ts-node after30Days.ts"
+    "after-30-days": "npx ts-node after30Days.ts",
+    "lint": "npx eslint . --ext .ts"
   },
   "nyc": {
     "extension": [
@@ -38,7 +39,10 @@
   "devDependencies": {
     "@types/chai": "^4.2.12",
     "@types/mocha": "^8.0.3",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
     "chai": "^4.2.0",
+    "eslint": "^7.7.0",
     "mocha": "^8.1.3",
     "nyc": "^15.1.0",
     "ts-mocha": "^7.0.0",
